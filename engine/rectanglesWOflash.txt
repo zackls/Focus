@@ -1,0 +1,34 @@
+so here's a program written in as3 that finds the # of
+rectangles under points, it's only 16 lines of
+essential code (subtracting the comments and the error
+message). i just plugged in 4 random rectangles and 4
+random points to show that it works. enjoy:
+
+
+
+import flash.geom.Point;
+import flash.display.Sprite;
+
+var rectangles:Array = [0,0,200,200,
+			12,9,300,80,
+			20,20,290,150,
+			-40,-40,40,40];
+//FORMAT: rectangles with a x position, b y position, c width, and d height = [a1,b1,c1,d1,a2,b2,c2,d2,a3...]
+var points:Array = [new Point(100,100),new Point(30,100),new Point(40,40),new Point(-20,0)];
+//insert points here, "new Point(x,y)"
+
+if (!(rectangles.length / 4 is int)) {
+	throw new Error("Parameter argument.");
+}
+var contacts:Array = [];
+for (var i:int = 0; i < points.length; i++) {
+	contacts[i] = 0;
+	for (var j:int = 0; j < rectangles.length; j += 4) {
+		var clip:Sprite = new Sprite();
+		clip.graphics.drawRect(rectangles[j], rectangles[j + 1], rectangles[j + 2], rectangles[j + 3]);
+		if (clip.hitTestPoint(points[i].x,points[i].y)) {
+			contacts[i]++;
+		}
+	}
+	trace("Point " + (i + 1) + " touches " + contacts[i] + " rectangle(s)");
+}

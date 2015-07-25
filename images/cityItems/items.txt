@@ -1,0 +1,23 @@
+ITEMS AND THEIR RESPECTIVE WEIGHTS AND COMBINATIONS:
+
+	STARTING ITEMS:
+	revolver with 6 bullets (2)
+	jacket (0.5)
+	helmet (0.5)
+	backpack that carries 20 lbs (N/A)
+	small knife (0.2)
+	
+	PRIME ITEMS OBTAINED AND FROM WHERE (searching something may take 5-30 minutes depending on the size):
+	2 water bottles from helicopter (full 0.5 each, empty 0.1)
+	C4 with remote detonator from || (5lbs)
+	lighter from || (0.1)
+	2 1-gallon jugs from basement of building 2 (full 8 lbs each, empty 0.2)
+	rusted pipe from builidng 1 (3)
+	
+	COMBINATIONS AND NON-PRIME ITEMS (may take 5-10 minutes to try to combine 2 things that won't combine, items with stars may be taken back apart without time penalty, final item weights are the weights of the starting items):
+	small knife + jacket = small knife + 5 strips of cloth
+	water bottle (empty) + 5 strips of cloth = silencer*
+	revolver + silencer* = silenced revolver*
+	lighter + rusty pipe = lighter + thermite (gone after 1 minute)
+	lighter + x strips of cloth = lighter
+	lighter + jacket = lighter
