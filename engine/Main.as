@@ -16,7 +16,7 @@
 		public function Main()
 		{
 			stop();
-			preloader();
+			menuScreen();
 		}
 		private function preloader():void
 		{
